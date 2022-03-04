@@ -35,7 +35,7 @@
 
 - Introducing not needed complexity trying to avoid other pitfalls
 
-### SOLID principles
+### Extended SOLID principles
 
 #### Open/Closed principle OCP
 
@@ -52,3 +52,33 @@
 #### Interface Segregation Principle ISP
 
 - Interfaces should serve a single purpose and be decomposable
+
+#### Reuse Equivalency Principle REP
+
+- every reusable piece of code must be managed in version to ensure compatibility
+
+#### The Common Closure Principle CCP
+
+- classes that are impacted with same changes are placed in same package
+
+#### The Common Reuse Principle CRP
+
+- reusing a single class means reusing the whole package
+- classes come bundled together for changes
+
+#### The Acyclic Dependencies Principle ADP
+
+- X depends on Y and Y depends on X
+- Package should never have cyclic dependencies
+
+#### Stable Dependencies Principle SDP
+
+- Volatility is how much a software changes
+- avoid depending on volatile pieces
+- Stability is how hard a piece changes
+- A package should only depend on packages stabler than it
+
+#### Stable Abstractions Principle (SAP)
+
+- Most stable packages should be more abstract
+- Unstable packages should be the concrete ones
